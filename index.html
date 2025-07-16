@@ -1,12 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürüş Puanın Seni Tanımlar!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #303335;
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1C1E20;
+            margin-bottom: 16px;
+            text-align: left;
+            letter-spacing: -0.02em;
+        }
+
+        .content-section {
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 132px;
+            height: 132px;
+            background-color: #fdfdf9;
+            border-radius: 27px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 16px;
+        }
+
+        .content-section.reverse .image-container {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #303335;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        .standalone {
+            clear: both;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #3C424E;
+            margin-bottom: 4px;
+            text-align: left;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #3C424E;
+            margin-bottom: 8px;
+            padding-left: 16px;
+            text-align: left;
+        }
+
+        li {
+            margin-bottom: 4px;
+            text-align: left;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #303335;
+        }
+
+        .intro-text {
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #303335;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: #F6F6F6;
+            margin: 20px 0;
+            border-radius: 1px;
+        }
+
+        /* Bullet noktalarını kalınlaştır */
+        .bullet {
+            font-weight: 900;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 768px) {
+            .image-container {
+                width: 100px;
+                height: 100px;
+                margin-right: 12px;
+                margin-bottom: 12px;
+            }
+
+            .content-section.reverse .image-container {
+                margin-left: 12px;
+                margin-right: 0;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p, ul {
+                font-size: 11px;
+            }
+
+
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Sürüş Puanın Seni Tanımlar!</h1>
+        
+        <div class="intro-text">
+            <p>TikTak'ta her sürüşten sonra davranışlarına göre puan alır ve 100 üzerinden değerlendirilirsin.</p>
+        </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <div class="content-section">
+            <div class="image-container">
+                <img src="https://framerusercontent.com/images/QYkFYpBmVdSkyYG85qz7JzbXO9c.png" alt="Sürüş Puanı İllustrasyonu">
+            </div>
+            <p>Bu puan, sistemdeki yerini belirler:</p>
+            <p><span class="highlight">Düşük Puanlı Kullanıcılar:</span> Güvenli olmayan ve kurallara uymayan kullanımlar TikTak'ta kiralama yapmanı engelleyebilir.</p>
+            <p><span class="highlight">Orta Seviye:</span> Sınırdasın! Daha dikkatli sürüş ve araç kullanımıyla puanını yükseltmen mümkün.</p>
+            <p><span class="highlight">Yüksek Puanlı Kullanıcılar:</span> Harikasın! Güvenli ve özenli kullanımın sayesinde seni özel fırsatlar, indirimler ve sürpriz avantajlar bekliyor.</p>
+            <p style="margin-top: 16px;">Her sürüşün bir etkisi var. TikTak'ta iyi kullanıcı deneyimi seninle başlar. 🚗💨</p>
+        </div>
 
+        <div class="divider"></div>
+
+        <div class="content-section reverse">
+            <div class="image-container">
+                <img src="https://framerusercontent.com/images/i1hWvOVKFqrSGDo5W3GekEP1Dlw.png" alt="Hesaplama İllustrasyonu">
+            </div>
+            <h2 class="section-title">Puanınız nasıl hesaplanır?</h2>
+            <p style="margin-bottom: 16px;">TikTak'ta puanınız, her sürüşten sonra otomatik olarak hesaplanır.</p>
+            <p>Değerlendirilen başlıca kriterler:</p>
+            <ul>
+                <li>Ani fren ve hızlanma davranışları</li>
+                <li>Hız limiti ve trafik kurallarına uyum</li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title standalone">Puanlar Neden Önemli?</h2>
+        
+        <div class="content-section">
+            <div class="image-container">
+                <img src="https://framerusercontent.com/images/rPVHiILIH4KCsZtyOvAejSvM6w.png" alt="Önem İllustrasyonu">
+            </div>
+            <p><span class="bullet">•</span> Puanlar, TikTak'ta güvenli, sorumlu ve keyifli bir deneyimi sürdürülebilir kılar.</p>
+            <p><span class="bullet">•</span> Düşük puanlar uyarı veya geçici kullanım kısıtı ile sonuçlanabilir.</p>
+            <p><span class="bullet">•</span> Yüksek puanlar, özel kampanyalara, indirimlere veya sadakat programlarına katılım hakkı sağlayabilir.</p>
+            <p style="margin-top: 16px;">Güvenli sürün, araca özen gösterin, puanınızı yüksek tutun. Çünkü TikTak'ta kaliteli kullanım, herkes için daha iyi bir deneyim demektir.</p>
+        </div>
+    </div>
 </body>
 </html>
